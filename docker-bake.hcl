@@ -19,7 +19,7 @@ target "main" {
     ]
 }
 target "8.0.0" {
-    inherits: [ "main" ]
+    inherits = ["main"]
     dockerfile = "Dockerfile"
     tags = [
         "docker.io/${IMAGE_NAME}:latest",
